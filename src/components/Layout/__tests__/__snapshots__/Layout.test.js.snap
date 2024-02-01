@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Vehicle correctly 1`] = `
+<div
+  data-testid="layoutTest1"
+/>
+`;
+
+exports[`takes a snapshot of Layout component 1`] = `
+<div
+  data-testid="layoutTest1"
+/>
+`;

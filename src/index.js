@@ -1,11 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import VehicleList from './components/VehicleList';
-import './global-styles.scss';
+import { createRoot } from 'react-dom/client';
+import App from './App';
 
-ReactDOM.render(
+const root = createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-    <VehicleList />
-  </React.StrictMode>,
-  document.querySelector('.root')
+    <App />
+  </React.StrictMode>
 );

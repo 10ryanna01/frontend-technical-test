@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`capture a snap shot of App  1`] = `
+<main
+  data-testid="appTest1"
+>
+  <div
+    data-testid="seoTest1"
+  />
+  <div
+    data-testid="layoutTest1"
+  >
+    loading...
+  </div>
+</main>
+`;
+
+exports[`capture a snap shot of App component  1`] = `
+<main
+  data-testid="appTest1"
+>
+  <div
+    data-testid="seoTest1"
+  />
+  <div
+    data-testid="layoutTest1"
+  >
+    loading...
+  </div>
+</main>
+`;
+
+exports[`capture a snap shot of App component 1`] = `
+<main
+  data-testid="appTest1"
+>
+  <div
+    data-testid="seoTest1"
+    role="site identity information"
+  />
+  <main
+    className="UI__main-layout"
+    data-testid="layoutTest1"
+    role="site layout"
+  >
+    loading...
+  </main>
+</main>
+`;
+
+exports[`renders App correctly  1`] = `
+<div
+  data-testid="appTest1"
+>
+  <div
+    data-testid="seoTest1"
+  />
+  <div
+    data-testid="layoutTest1"
+  >
+    loading...
+  </div>
+</div>
+`;
+
+exports[`renders App correctly 1`] = `
+<div
+  data-testid="appTest1"
+>
+  loading...
+</div>
+`;
+
+exports[`renders Vehicle correctly 1`] = `
+<div
+  data-testid="layoutTest1"
+/>
+`;

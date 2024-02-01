@@ -1,3 +1,183 @@
-.VehicleList {
-  width: 100%;
+@import "./minireset";
+// convenient font import
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;600;800&display=swap");
+//  super light tasteful class based interctions and animations
+@import "animate.css";
+//=======================
+// scheme / theme
+// -- complimentary Hex pallete
+//=======================
+//=======================
+// scheme / theme
+// -- complimentary Hex pallete
+//=======================
+
+// #2A9D8F
+// #E9C46A
+// #F4A261
+
+$theme-color-A: #ffffff;
+$theme-color-B: #0c090d;
+$theme-color-C: #8ab0ab;
+$theme-color-D: #ff8552;
+$theme-color-F: #eef1f1;
+// reset mini reset @ bg color defaults
+html,
+body {
+    font-family: "Work Sans", sans-serif;
+    background: $theme-color-A;
+}
+
+//=======================
+// utilities
+// -- atomic, modular & mixins
+//=======================
+
+.UI__utility {
+    &__center-content {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@mixin size-xs {
+    @media (max-width: 420px) {
+        @content;
+    }
+}
+@mixin size-sm {
+    @media (max-width: 720px) {
+        @content;
+    }
+}
+
+@mixin size-md {
+    @media (max-width: 1360px) {
+        @content;
+    }
+}
+@mixin size-lg {
+    @media (max-width: 1600px) {
+        @content;
+    }
+}
+
+//=======================
+// typography
+// -- set sizes an unifly vertical rhythm
+//=======================
+.UI__typography {
+    &__h1 {
+        margin: 0;
+        font-size: 2.8rem;
+        line-height: 1;
+    }
+    &__h2 {
+        margin: 0;
+        font-size: 2.44rem;
+        line-height: 1;
+    }
+    &__h3 {
+        margin: 0;
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    &__h4 {
+        margin: 0;
+    }
+}
+
+//=======================
+// core layout
+// -- gird and flex flows
+//=======================
+
+.UI {
+    &__main-layout {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        border: 3px solid red;
+        max-width: 1800px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+//=======================
+// cards
+// -- gird and flex flows
+//=======================
+
+.UI__card {
+    display: flex;
+
+    flex-flow: column;
+
+    position: relative;
+
+    border: $theme-color-F 2px solid;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    @media (max-width: 920px) {
+        max-width: 100%;
+        flex-flow: row;
+        box-shadow: none;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        transition: all 0.3s ease-in-out;
+        border: $theme-color-C 2px solid;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        //turn these into mixins
+        @media (max-width: 1120px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1f 1fr;
+        }
+
+        @media (max-width: 920px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+    &__hero-img {
+        img {
+            width: 100%;
+            object-fit: fill;
+            max-width: 600px;
+
+            @media (max-width: 920px) {
+                aspect-ratio: 1 / 1;
+
+                width: 300px;
+            }
+        }
+    }
+    &__hero-titles {
+        &__product-title {
+            @extend .UI__typography__h1;
+            margin-bottom: 1.2rem;
+        }
+        &__desc {
+            @extend .UI__typography__h3;
+            margin-bottom: 0.5rem;
+        }
+        &__price {
+            @extend .UI__typography__h2;
+            margin-bottom: 1rem;
+        }
+    }
+    &__footer {
+        &__meta {
+            &__meta-title {
+            }
+            &__meta-title {
+            }
+        }
+    }
 }
