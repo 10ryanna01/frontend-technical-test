@@ -1,3 +1,28 @@
+### [Demo Link => ](https://ra-buildout-react.surge.sh/)
+
+#### 1 💾 Clone down repo & install 💻
+```shell 
+npm install 
+```
+#### 2 📀 run it 
+
+```shell 
+npm start
+
+```
+#### 3 📀 run some tests
+```shell 
+npm test
+
+```
+#### 4 check against linting errors📣
+```shell 
+npm run lint
+
+```
+
+
+
 Frontend Technical Test for [TeamITG](https://teamitg.com/)
 
 ## System requirements
